@@ -1,0 +1,24 @@
+1. slice dan array itu sama yang membedakan hanya, jika array lengthnya di deklarasikan langsung dan nilainya
+bisa diisi setelah deklarasi, sedangkan slice lengthnya tidak ada dan nilainya langsung dideklarasikan (jika tidak ingin
+diisi nilainya langsung maka bisa menggunakan fungsi append)
+2. slice atau array lengthnya bisa dinamis dengan deklarasi menggunakan make
+3. map harus di inisialisasi langsung karena jika tidak maka nilainya nil terus (inisialisasi engga nya ada {})
+4. untuk import suatu fungsi maka yang perlu diperhatikan adalah namaproject.namafolder. dan untuk nama fungsinya
+huruf pertama harus capital
+5. suatu variabel, struct, fungsi atau lainnya jika ingin diakses di lain package maka huruf pertama nya harus kapital
+6. variable yang ada didalam struct jika ingin di akses dari lain package maka huruf pertama nya harus kapital
+7. closure adalah fungsi yang disimpan dalam variable dan fungsi yang dipakai untuk nilai kembalian
+=== penulisan variable, struct, fungsi dsb menggunakan huruf kapital untuk huruf pertamanya ===
+8. struct dapat disimpan dalam variable pointer dan istimewanya pengaksesannya (deferencing tidak menggunakan tanda
+asterisk (*))
+9. struct dapat override dari struct lain dan pengaksesannya bisa langsung atau menggunakan path dari nama struct parent
+10. anonymous struct adalah struct yang digunakan hanya untuk satu kali saja
+11. method tidak bisa digunakan untuk setter suatu variable objek di struct, jadi ketika kita misal buat method untuk
+set variable objek maka perubahan variable objek perubahannya hanya berlaku pada method tersebut tidak untuk lainnya
+jika ingin ada perubahan nilainya maka menggunakan method pointer
+12. hubungan interface - struct - method : interface itu derajatnya diatas struct, struct ibaratnya class, method
+ibaratnya fungsi didalam class
+13. tipe data yang dapat di isi dengan data dinamis (tipe data berbeda2) bisa menggunakan interface{} atau any (berlaku
+hanya untuk go versi 1.18 keatas dan harus di setting terlebih dulu di go.mod dengan perintah :
+-> go mod edit -go (versi go)
+-> go mod tidy
